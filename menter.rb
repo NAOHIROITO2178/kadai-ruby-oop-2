@@ -1,8 +1,8 @@
 class Mentor
     attr_accessor :name
     
-    def initialize
-        self.name = "kirameki"
+    def initialize(name)
+        self.name = name
     end
 
     def job(mentername)
@@ -13,8 +13,8 @@ end
 class RailsMentor < Mentor
     attr_accessor :name
     
-    def initialize
-        self.name = "akaide"
+    def initialize(name)
+        self.name = name
     end
     
     def job(railsMentorname)
@@ -23,8 +23,8 @@ class RailsMentor < Mentor
     
 end
 
-mentor= Mentor.new
-railsMentor = RailsMentor.new
+mentor= Mentor.new("kirameki")
+railsMentor = RailsMentor.new("akaide")
 
 mentor.job("煌木")
 railsMentor.job("赤出")
