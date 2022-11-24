@@ -4,9 +4,13 @@ class Mentor
     def initialize(name)
         self.name = name
     end
+    
+    def introduction
+        self.name
+    end
 
-    def job(mentername)
-        puts "#{mentername}です。私は現役のITプロフェッショナルです。"
+    def job(menter)
+        puts "#{menter.introduction}です。私は現役のITプロフェッショナルです。"
     end
 end
 
@@ -17,8 +21,12 @@ class RailsMentor < Mentor
         self.name = name
     end
     
-    def job(railsMentorname)
-      puts "#{railsMentorname}です。私はRubyとRailsでWebアプリケーションを作ります。"
+    def introduction
+        self.name 
+    end
+    
+    def job(railsMentor)
+      puts "#{railsMentor.introduction}です。私はRubyとRailsでWebアプリケーションを作ります。"
     end
     
 end
